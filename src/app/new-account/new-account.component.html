@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 mt-3">
+      <label for="accountName" class="labelBold mb-2">Account Name</label>
+      <input #accountName
+             type="text"
+             class="form-control"
+             id="accountName"
+             placeholder="Enter Account Name">
+             <div class="form-group mt-2">
+               <select class="form-control" #status>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="hidden">Hidden</option>
+              </select>
+             </div>
+      <button type="button" class="btn btn-primary mt-3" (click)="onAddAccount(accountName.value,status.value)">Add Account</button>
+    </div>
+  </div>
+</div>
