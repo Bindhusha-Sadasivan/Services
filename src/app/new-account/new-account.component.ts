@@ -35,6 +35,6 @@ export class NewAccountComponent {
 
   onAddAccount(accountName:string, accountStatus:string){
     this.AccountService.handleAddedAccount(accountName, accountStatus);
-    this.loggingService.logMessage(accountStatus);
+    // this.loggingService.logMessage(accountStatus);
   }
 }

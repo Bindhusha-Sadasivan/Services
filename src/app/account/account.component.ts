@@ -30,6 +30,6 @@ constructor(private loggingService:LoggingServiceService, private accountService
 
 setTo(status:string){
   this.accountService.handleStatusChanged(this.id,status);
-  this.loggingService.logMessage(status);
+  // this.loggingService.logMessage(status);
 }
 }
