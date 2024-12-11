@@ -1,10 +1,13 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable, Output } from '@angular/core';
 import { LoggingServiceService } from '../logging-service/logging-service.service';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class AccountService {
+  @Output() statusChanged = new EventEmitter<any>();
+
   accounts = [
     {
       name: 'Master Account',
